@@ -1,0 +1,17 @@
+1. Plan Out Database
+
+2. Build Models
+
+3. Build API routes for user creation and login/logout
+
+4. Build API routes for posting/deleting blog posts
+
+5. Build API routes for posting/deleting comments
+
+6. Build handlebars main view
+
+7. Build home, login/signup, post creation, and dashboard handlebars pages
+
+8. Build partials to populate post and comment information
+
+9. Build home routes to point to handlebars pages

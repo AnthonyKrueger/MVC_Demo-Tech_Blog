@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col s12 card blue-grey">
+        <div class="card-content white-text">
+            <span class="card-title">{{title}} - {{user.username}}</span>
+            <p>{{text}}</p>
+            <p>~ {{format_time createdAt}}</p>
+        </div>
+        <div class="container">
+            {{#each comments as |comment|}}
+            {{> comment-details}}
+            {{/each}}
+        </div>
+    </div>
+</div>
