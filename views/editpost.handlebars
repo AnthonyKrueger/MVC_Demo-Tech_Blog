@@ -1,0 +1,18 @@
+    <form class="col s12 card blue-grey editForm" data-postid="{{post.id}}">
+        <div class="row card-content white-text">
+            <span class="card-title col s12">Edit Your Post</span>
+            <div class="input-field col s6">
+                <input id="title" type="text" value="{{post.title}}" required>
+                <label for="title">Title</label>
+            </div>
+            <div class="col s6"></div>
+            <div class="input-field col s12">
+                <textarea id="text" type="text" required>{{post.text}}</textarea>
+                <label for="text">Content</label>
+            </div>
+            <div class="col s12 center">
+                <button class="editButton btn waves-effect waves-light red accent-1" type="submit">Update Post</button>
+            </div>
+        </div>
+    </form>
+    <script src="/js/updateHandler.js"></script>

@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
     <link rel="stylesheet" type="text/css" href="/css/jass.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body class="orange lighten-5">
     <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper red accent-1">
             <a href='/' class="brand-logo">Tech Blog</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <ul id="nav-mobile" class="right">
                 <li><a href="/">Home</a></li>
                 <li><a href="/dashboard">Dashboard</a></li>
                 {{#if loggedIn}}
-                <li><a href="/logout">Logout</a></li>
+                <li><a class="logout">Logout</a></li>
                 {{else}}
                 <li><a href="/login">Login</a></li>
                 {{/if}}
@@ -25,11 +25,13 @@
         </div>
     </nav>
     <main>
-        <div class="container">
+        <div class="container bodyContainer">
             {{{body}}}
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
+    {{#if loggedIn}}
+   <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 </html>

@@ -3,12 +3,27 @@
         <div class="card-content white-text">
             <span class="card-title">{{title}} - {{user.username}}</span>
             <p>{{text}}</p>
-            <p>~ {{format_time createdAt}}</p>
-        </div>
+            <p class="right">{{format_time updatedAt}}</p>
         <div class="container">
+            <div class="row">
+                <form class="col s12 commentForm" id="post{{id}}">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="comment{{id}}" class="materialize-textarea commentText" data-postid="{{id}}" required></textarea>
+                            <label for="comment{{id}}">Comment</label>
+                        </div>
+                    </div>
+                     <div class="col s12 center">
+                      <button class="commentButton btn waves-effect waves-light red accent-1" type="submit">submit</button>
+                    </div>
+
+                </form>
+            </div>
             {{#each comments as |comment|}}
             {{> comment-details}}
             {{/each}}
         </div>
+        </div>
     </div>
 </div>
+

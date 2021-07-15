@@ -1,0 +1,26 @@
+<div class="row">
+    <form class="col s12 card blue-grey postForm">
+        <div class="row card-content white-text">
+            <span class="card-title col s12">Submit a New Post</span>
+            <div class="input-field col s6">
+                <input id="title" type="text" required>
+                <label for="title">Post Title</label>
+            </div>
+            <div class="col s6"></div>
+            <div class="input-field col s12">
+                <textarea id="text" type="text" required></textarea>
+                <label for="text">Content</label>
+            </div>
+            <div class="col s12 center">
+                <button class="submitButton btn waves-effect waves-light red accent-1" type="submit">submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="/js/postHandler.js"></script>
+{{#each postList as |post|}}
+{{> post-list-dashboard}}
+{{/each}}
+{{#if postList}}
+<script src="/js/dashBoardHandler.js"></script>
+{{/if}}

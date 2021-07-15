@@ -1,0 +1,13 @@
+<div class="row card blue-grey">
+    <a class="col s12 postEntry" href="/post/{{id}}">
+        <div class="card-content white-text">
+            <span class="card-title">{{title}} - {{user.username}}</span>
+            <p>{{text}}</p>
+            <p class="right">{{format_time updatedAt}}</p>
+        </div>
+    </a>
+        <div class="card-action">
+            <a class="editPostButton" data-postId="{{id}}">Edit Post</a>
+            <a class="deletePostButton" data-postId="{{id}}">Delete Post</a>
+        </div>
+</div>

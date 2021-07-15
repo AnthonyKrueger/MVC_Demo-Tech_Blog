@@ -2,20 +2,20 @@ const { Comment } = require("../models");
 
 const commentData = [
     {
-        text: "a bunch of stuff here",
-        username: "yeehaw97",
-        userId: 3,
+        text: "Totally agree!",
+        username: "TechGuy123",
+        userId: 1,
         postId: 1
     },
     {
-        text: "a bunch of stuff here",
-        username: "yeehaw99",
-        userId: 1,
+        text: "Awesome post!",
+        username: "ComputerWhiz",
+        userId: 3,
         postId: 2
     },
     {
-        text: "a bunch of stuff here",
-        username: "yeehaw98",
+        text: "Definitely!",
+        username: "GeniusCoder",
         userId: 4,
         postId: 1
     }

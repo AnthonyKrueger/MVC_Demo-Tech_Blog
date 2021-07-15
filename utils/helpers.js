@@ -1,9 +1,9 @@
 module.exports = {
     format_time: (date) => {
-      const month = date.getMonth() + 1
-      const day = date.getDate()
+      let month = date.getMonth() + 1
+      let day = date.getDate()
       let hour = date.getHours()
-      const suffix = "AM"
+      let suffix = "AM"
       if(hour > 12) {
         hour = hour - 12;
         suffix = "PM"
@@ -15,7 +15,8 @@ module.exports = {
       if(minutes < 10) {
         minutes = `0${minutes}`
       }
-      return(`${hour}:${minutes}${suffix} - ${month}/${day}`)
+      const year = date.getFullYear()
+      return(`${month}/${day}/${year} - ${hour}:${minutes}${suffix}`)
     }
   };
   

@@ -1,0 +1,47 @@
+<div class="row loginDiv">
+    <div class="col s12 m6 l6">
+        <div class="card indigo lighten-2">
+            <div class="card-content white-text">
+                <span class="card-title">Login</span>
+                <form class="row loginForm">
+                    <div class="input-field col s12 white-text">
+                        <input id="loginusername" type="text" required minlength="4" maxlength="15">
+                        <label for="loginusername">Username</label>
+                    </div>
+                    <div class="input-field col s12 white-text">
+                        <input id="loginpassword" type="password" required minlength="6" maxlength="16">
+                        <label for="loginpassword">Password</label>
+                    </div>
+                    <div class="col s12 center">
+                        <span class="red-text warningText"></span>
+                    </div>
+                    <div class="col s12 center">
+                      <button class="btn-large waves-effect waves-light red accent-1" type="submit">login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6 l6">
+        <div class="card indigo lighten-2">
+            <div class="card-content white-text">
+                <span class="card-title">Sign Up</span>
+                <form class="row signupForm">
+                    <div class="input-field col s12">
+                        <input id="signupusername" type="text" required>
+                        <label for="signupusername">Username</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="signuppassword" type="password" required minlength="6" maxlength="16">
+                        <label for="signuppassword">Password</label>
+                    </div>
+                     <div class="col s12 center">
+                      <button class="btn-large waves-effect waves-light red accent-1" type="submit">signup</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./js/login.js"></script>
