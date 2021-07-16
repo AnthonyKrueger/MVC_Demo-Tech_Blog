@@ -1,3 +1,23 @@
+html{
+  position:relative; 
+  min-height: 100%;
+}
+
+body {
+  margin-bottom:100px;
+}
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 0;
+}
+
+.card .card-content .card-title {
+  margin-bottom: 15px;
+}
+  
   /* label color */
   .input-field label {
     color: rgb(253, 253, 253);
@@ -30,4 +50,10 @@
 
   .card-title {
     text-decoration: underline;
+  }
+  @media only screen and (max-width: 992px) {
+    nav .brand-logo {
+      left: 20%;
+    }
+
   }

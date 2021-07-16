@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
-<body class="orange lighten-5">
+<body class="grey lighten-4">
     <nav>
-        <div class="nav-wrapper red accent-1">
+        <div class="nav-wrapper deep-purple lighten-2">
             <a href='/' class="brand-logo">Tech Blog</a>
             <ul id="nav-mobile" class="right">
-                <li><a href="/">Home</a></li>
                 <li><a href="/dashboard">Dashboard</a></li>
                 {{#if loggedIn}}
                 <li><a class="logout">Logout</a></li>
@@ -29,6 +28,14 @@
             {{{body}}}
         </div>
     </main>
+            <footer class="page-footer deep-purple lighten-2">
+          <div class="footer-copyright">
+            <div class="container">
+            Made by Anthony Krueger for Northwestern Coding Bootcamp
+            <a class="grey-text text-lighten-4 right" href="#!">Github Link</a>
+            </div>
+          </div>
+        </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     {{#if loggedIn}}
    <script src="/js/logout.js"></script>
