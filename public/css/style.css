@@ -17,6 +17,8 @@ body {
 .card .card-content .card-title {
   margin-bottom: 15px;
 }
+
+pre { overflow: auto; width: 100%; white-space: pre-wrap; }
   
   /* label color */
   .input-field label {
