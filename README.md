@@ -30,6 +30,10 @@ SECRET=[Secret Phrase for Sessions]
   
   Posts and comments can only be created when logged in to a valid account. To interact with the database behind the scenes, a CRUD client like Insomnia can be created to interact with API routes and delete/update content. 
   
+  ## Deployed Application
+  
+  A link to a live, deployed instance of this application can be found [HERE](https://mighty-springs-17704.herokuapp.com/)
+  
 
   ## Questions
   
