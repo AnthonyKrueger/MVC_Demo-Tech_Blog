@@ -32,7 +32,7 @@ SECRET=[Secret Phrase for Sessions]
   
   ## Deployed Application
   
-  A link to a live, deployed instance of this application can be found [HERE](https://mighty-springs-17704.herokuapp.com/)
+  A link to a live, deployed instance of this application can be found [HERE](https://ak-tech-blog.herokuapp.com/)
   
 
   ## Questions
